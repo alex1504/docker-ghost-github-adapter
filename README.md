@@ -1,4 +1,4 @@
-A Docker image that runs the Ghost CMS with an cdnimg and github storage adapter installed.
+A Docker image that runs the Ghost CMS with cdnimg and github storage adapter installed. Base on [official ghost image](https://hub.docker.com/_/ghost).
 
 # pull image
 
