@@ -13,6 +13,7 @@ Create container by set environment param to use different adapter
 use [ghost-storage-github-jsdelivr](https://github.com/alex1504/ghost-storage-github-jsdelivr) adapter
 ```
 docker run -p 2368:2368 \
+  -e url=<Your Site URL>
   -e storage__active=ghost-storage-github-jsdelivr \
   -e storage__ghost-storage-github-jsdelivr__token=<Github Token> \
   -e storage__ghost-storage-github-jsdelivr__owner=<Github Owner Name> \
@@ -24,6 +25,7 @@ docker run -p 2368:2368 \
 use [ghost-cdnimg-store](https://github.com/alex1504/ghost-cdnimg-store) adapter
 ```
 docker run -p 2368:2368 \
+  -e url=<Your Site URL>
   -e storage__active=ghost-cdnimg-store \
   -e storage__ghost-cdnimg-store__server=<Server Name> \
   alex1504/ghost-adapter:latest
@@ -33,6 +35,7 @@ docker run -p 2368:2368 \
 use [ghost-oss-store](https://github.com/MT-Libraries/ghost-oss-store) adapter
 ```
 docker run -p 2368:2368 \
+  -e url=<Your Site URL>
   -e storage__active=ghost-oss-store \
   -e storage__ghost-oss-store__accessKeyId=<accessKeyId> \
   -e storage__ghost-oss-store__accessKeySecret=<accessKeySecret> \
@@ -49,6 +52,7 @@ docker run -p 2368:2368 \
 use [ghost-qcloud-cos](https://github.com/ZhelinCheng/ghost-qcloud-cos) adapter
 ```
 docker run -p 2368:2368 \
+  -e url=<Your Site URL>
   -e storage__active=ghost-qcloud-cos \
   -e storage__ghost-qcloud-cos__baseUrl=<baseUrl> \
   -e storage__ghost-qcloud-cos__SecretId=<SecretId> \
@@ -62,6 +66,7 @@ docker run -p 2368:2368 \
 use [ghost-qn-store](https://github.com/Minwe/qn-store) adapter
 ```
 docker run -p 2368:2368 \
+  -e url=<Your Site URL>
   -e storage__active=ghost-qn-store \
   -e storage__ghost-qn-store__accessKey=<accessKey> \
   -e storage__ghost-qn-store__secretKey=<secretKey> \
